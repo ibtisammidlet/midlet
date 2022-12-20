@@ -1,0 +1,1 @@
+$("#his").text().substring( $("#his").text().lastIndexOf("from") + 6, $("#his").text().lastIndexOf("to") )}

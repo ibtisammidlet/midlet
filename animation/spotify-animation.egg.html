@@ -1,0 +1,53 @@
+<!-- https://codepen.io/pachristos/pen/OBmPqM -->
+
+<div class="container" id="container">
+  <div class="button" id="button">
+    <div class="spotify" id="spotify">
+      <iframe src="spotify-embed.egg.html" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media">
+      </iframe>
+    </div>
+  </div>
+</div>
+<style>
+.spotify {
+  position: absolute;
+  top: 250px;
+  left: 30px;
+  height: 80px;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: black;
+  right: 20px;
+  bottom: 20px;
+  overflow: hidden;
+  transition: width 0.6s, height 0.6s, bottom 0.6s, right 0.6s;
+}
+
+.button:hover {
+  background-color: green;
+  width: 600px;
+  height: 600px;
+  right: -250px;
+  bottom: -250px;
+}
+
+.button:hover .spotify {
+  opacity: 1;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  width: 1000px;
+  height: 500px;
+  background-color: grey;
+  overflow: hidden;
+}
+</style>

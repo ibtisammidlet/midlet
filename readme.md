@@ -12,3 +12,4 @@
 -always stay under 100k, we don't work for money.  
 -free or expensive, choose  
 -LICENSE  
+-usage of 2 color no accent

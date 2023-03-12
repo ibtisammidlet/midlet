@@ -1,4 +1,4 @@
-(function XmlStoreObject(ObjectFiles,Object_X1,FileUrl) {
+function XmlObjectStore(ObjectFiles,Object_X1,FileUrl) {
     // IndexedDB
     var indexedDB = window.indexedDB || window.webkitIndexedDB || window.mozIndexedDB || window.OIndexedDB || window.msIndexedDB,
         IDBTransaction = window.IDBTransaction || window.webkitIDBTransaction || window.OIDBTransaction || window.msIDBTransaction,
@@ -104,13 +104,14 @@
     request.onupgradeneeded = function (event) {
         createObjectStore(event.target.result);
     };
-})();
+}
 
 
 /* usage base
 var ObjectFiles = "JsonData"; // "elephantFiles"
 var Object_X1 = "data"; // "elephants"
 var FileUrl = "./data.json"; // "elephant.png"
-XmlStoreObject(ObjectFiles,Object_X1,FileUrl);
-==> ObjectURL var
+XmlObjectStore(ObjectFiles,Object_X1,FileUrl);
+==> ObjectURL var // blob:https://xx*
+https://developer.chrome.com/docs/apps/offline_storage/#unlimited
 */

@@ -1,1 +1,0 @@
-https://developer.chrome.com/docs/apps/offline_storage/#unlimited

@@ -1,0 +1,11 @@
+{
+  "name": "midlet",
+  "version": "1.0.0.2313",
+  "author": "ibtisam midlet",
+  "license": "MIT/IBTI",
+  "dependencies": {
+    "concat": "1.0.3",
+	"bulk-require": "1.0.1"
+  }
+
+}

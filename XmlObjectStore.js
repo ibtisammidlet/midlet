@@ -108,10 +108,10 @@ function XmlObjectStore(ObjectFiles,Object_X1,FileUrl) {
 
 
 /* usage base
-var ObjectFiles = "JsonData"; // "elephantFiles"
-var Object_X1 = "data"; // "elephants"
-var FileUrl = "./data.json"; // "elephant.png"
-XmlObjectStore(ObjectFiles,Object_X1,FileUrl);
-==> ObjectURL var // blob:https://xx*
-https://developer.chrome.com/docs/apps/offline_storage/#unlimited
+var ObjectFiles = "JsonData"; // was "elephantFiles" // the indexeddb database will be opened/create (eg, JsonData) 
+var Object_X1 = "data"; // was "elephants" // the object in the indexeddb database that you will create to store the file in (eg, subbind) 
+var FileUrl = "./data.json"; // was  "elephant.png" // the file (need to be url use this ) that you will inject the object, JsonData(database name)>>subbind (object name) >> 2.4.4.json (injected file)
+XmlObjectStore(ObjectFiles,Object_X1,FileUrl); // calling the function with variables
+==> ObjectURL var // should console log this console.log(ObjectURL) should give blob:https://xx* you open it you find the json (which provided from the blob like you see)
+https://developer.chrome.com/docs/apps/offline_storage/#unlimited // not importent for you, found a leak, but might worth reading
 */

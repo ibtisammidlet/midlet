@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+
+
+<style> 
+#search_form {
+width: -moz-fit-content;
+margin: 0 auto;
+}
+
+#word_of_the_site {
+width: -moz-fit-content;
+margin: 50px auto 5px;
+font-family: comic sans ms;
+}
+
+/*** this to hide other blog elments ***/
+.sidebar-wrapper {
+    display: none;
+}
+.comments {
+display: none;
+}
+#main-wrapper {
+    width: 99%;
+}
+#footer-wrapper {
+position: relative;
+bottom: -500px;
+}
+</style>
+
+<div id="word_of_the_site">over 100,000 midlets witing you..</div>
+
+<form id="search_form" name="searchform" onSubmit="return dosearch();">
+<input type="text" name="searchterms">
+
+<select name="sengines">
+            <option value="https://justinmidlet.blogspot.com/search">any size</option>
+            <option name="1" value="https://justinmidlet.blogspot.com/search/label/0-100KB">0-100KB</option>
+            <option name="2" value="https://justinmidlet.blogspot.com/search/label/100-200KB">100-200KB</option>
+            <option name="3" value="https://justinmidlet.blogspot.com/search/label/200-300KB">200-300KB</option>
+            <option name="4" value="https://justinmidlet.blogspot.com/search/label/300-1000KB">300-1000KB</option>
+            <option name="5" value="https://justinmidlet.blogspot.com/search/label/over 1000KB">over 1000KB</option>
+</select>
+
+<select name="adder" style="display:none"><option value="?q=">adder</option></select>
+
+<input type="submit" name="SearchSubmit" value="Search">
+</form>
+
+<script type="text/javascript">
+function dosearch() {
+var sf=document.searchform;
+location.href = sf.sengines.options[sf.sengines.selectedIndex].value + sf.adder.options[sf.adder.selectedIndex].value + encodeURIComponent(sf.searchterms.value);
+
+return false;
+}
+</script>
+
+</body>
+
+</html>

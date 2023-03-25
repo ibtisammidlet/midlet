@@ -1,0 +1,1 @@
+<a href="google.com" onMouseOver="alert('do not click');return true;">link</a>

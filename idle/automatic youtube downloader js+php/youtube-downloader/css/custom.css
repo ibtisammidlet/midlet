@@ -1,0 +1,31 @@
+body {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    background-color: #fff;
+}
+.userscript {
+    float: right;
+    margin-top: 5px
+}
+.inner-container {margin: 0 auto}
+.video-info {
+	margin-top: 15px;
+	font-size: 13px;
+}
+.video-info > p {font-weight:bold}
+.dl-list {
+	padding-left: 0px;
+}
+.dl-list > li {
+	list-style: none;
+	margin-bottom: 8px;
+}
+.btn-type {
+	min-width: 175px;
+}
+.btn-download {
+	min-width: 100px;
+}
+
+img[src*="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"] {
+display: none;}

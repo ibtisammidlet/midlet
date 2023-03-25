@@ -1,0 +1,4 @@
+<form method="post">
+<input type="button" value="ÊÍÏíË ÇáÕÝÍÉ"
+onclick="window.location.reload()">
+</form>

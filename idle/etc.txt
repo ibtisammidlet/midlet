@@ -1,0 +1,9 @@
++-*/ ()
+in % do 4%100=4                                                                                                      note: nothing btw 4% and 100
+aqual 4==5 ruselt false                                                                                              note: use == to aqual
+not aqual 4!=5                                                                                                       note: ! = not
+"Justin Midlet"                                                                                                     note: use " to store text
+document.write(txt.length);   result:nember of letter                                                               note: nember of letter of مرحباً في المعهد العربي للبرمجة
+document.write(str.toUpperCase());    result: upper case                                                            note: all texte show in upper case
+virebel <p id="demo"></p> document.getElementById("demo").innerHTML=Date();
+<!-- //--> after&befor  the script to block do if browser dont support

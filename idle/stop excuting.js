@@ -1,0 +1,1 @@
+throw new Error("Something went badly wrong!");

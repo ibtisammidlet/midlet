@@ -1,0 +1,14 @@
+<!-- note!: you can replace "document.getElementById("lazyload-youtube")" by "document.getElementsByClassName("lazyload-youtube")[0]" or jquery in whole replace script and it's working in hidden element like this note    -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function(event) { 
+  var str = document.getElementById("lazyload-youtube").innerHTML; 
+  var res = str.replace("replace this", "by this");
+  document.getElementById("lazyload-youtube").innerHTML = res;
+});
+</script>
+  
+  
+<div id="lazyload-youtube" >
+replace this
+</div>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>load demo</title>
+  <style>
+  body {
+    font-size: 12px;
+    font-family: Arial;
+  }
+li * {
+  display: inline-flex;
+  margin: auto 5px 0px;
+}
+.label.label-default {
+    display: none;
+}
+ul.dl-list:nth-child(1) {
+    display: none;
+}
+.dl-list {
+    width: -moz-fit-content;
+}
+
+
+
+
+/* BE SURE TO INCLUDE THE CSS RESET FOUND IN THE DEMO PAGE'S CSS */
+
+.dl-list {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dl-list li {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dl-list li:hover {background-color: #ddd;}
+
+#new-projects:hover .dl-list {display: block;}
+
+
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<ol id="tobe-replaced"></ol>
+ 
+<script>
+$( "#tobe-replaced" ).load( "https://trackmeup.000webhostapp.com/youtube-downloader/getvideo.php?videoid=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dkrk74V9kOR0&type=Download #new-projects" );
+</script>
+ 
+</body>
+</html>

@@ -1,0 +1,17 @@
+Removed all of the local packages for that project:
+npm uninstall *
+
+list globally installed packages:
+npm list -g
+yarn global list
+
+dir:
+yarn global dir
+yarn cache list
+
+install globally 
+yarn add "package"
+yarn global "./"
+
+
+https://stackoverflow.com/questions/40134390/what-is-the-equivalent-of-npm-install-package-name-save-in-yarn

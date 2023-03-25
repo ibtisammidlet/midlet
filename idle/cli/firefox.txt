@@ -1,0 +1,1 @@
+"C:\Program Files\Mozilla Firefox\firefox.exe" -no-remote -p 55plus

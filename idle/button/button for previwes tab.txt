@@ -1,0 +1,2 @@
+<input type="button" value="ÇáÚæÏÉ Åáì ÇáÕÝÍÉ ÇáÓÇÈÞÉ"
+onClick="javascript: history.go(-1)">

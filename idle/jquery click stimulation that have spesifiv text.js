@@ -1,0 +1,1 @@
+$(':contains("Tweet")').trigger('click');

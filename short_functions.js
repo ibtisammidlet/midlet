@@ -4,3 +4,17 @@ window.onbeforeunload = const checkURL = () => window.location.href.includes("ht
 
 // this will express date where it placed
 var date = new Date(); console.log(date.getFullYear()+'-'+(date.getMonth()+1)+'-'+date.getDate());
+
+
+// async/await
+let data = [] /** var outside **/
+async function getimgdownloadlinks() { /** fullyfieying the var **/
+}
+const downloadlinks = async (data) => { /** using the data **/
+}
+(async () => { /** global async function **/
+	await getimgdownloadlinks()  /** await the first function **/
+	downloadlinks(data) /** calling second function n giving it the parama **/
+})()
+
+

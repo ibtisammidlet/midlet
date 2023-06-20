@@ -14,3 +14,4 @@ function waitForElement(id, callback){
 waitForElement("jquery selection eg [value:hhh]", function(){
     // element is loaded.. do stuff
 });
+*/

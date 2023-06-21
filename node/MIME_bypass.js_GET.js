@@ -1,16 +1,24 @@
 <div id="MIME_bypass"></div>
 
-<script>
+<script>$(document).ready(function() {
+
+    return new Promise(function(resolve, reject) {
     var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
+    xhr.addEventListener('load', function() {
+      if (this.status == 200) {
         document.getElementById("MIME_bypass").innerHTML = this.responseText;
 
+//** edit1: now works try catch inside each other, where you do something with the fatched html
+            
+      } else {
+        reject(new Error("Failed to fetch MIME bypass data."));
       }
-    };
+    });
     xhr.open("GET", "https://raw.githubusercontent.com/ibtisammidlet/biotune/main/subbind/frontend/index.html", true);
     xhr.send();
-</script>
+  });
+ 
+});</script>
 
 <!-- the only way t make it fully works is using eval, otherwise:
 inline onlick works, where onkeyup, addeventlisternetner, and all other event handeler don't work
